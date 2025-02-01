@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>San Valentín</title>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function redirigir() {
+      window.location.href = 'index.html';
+    }
+    function insistir() {
+      alert('Por favor, di que sí ❤️');
+    }
+  </script>
+  <style>
+    .pregunta {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background: rgba(255, 182, 193, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 182, 193, 0.9);
+    }
+    .pregunta button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+    .si {
+      background: #ff69b4;
+      color: white;
+      border-radius: 5px;
+    }
+    .no {
+      background: #ff0000;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pregunta">
+    <h2>¿Quieres ser mi San Valentín? 💖</h2>
+    <button class="si" onclick="redirigir()">Sí</button>
+    <button class="no" onclick="insistir()">No</button>
+  </div>
+</body>
+</html>
